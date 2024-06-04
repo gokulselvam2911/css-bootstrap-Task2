@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey-Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="row">
+                <label for="" class="form-label"><h5>Name<span class="main">*</span></h5></label>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" placeholder="" aria-label="First name">
+                    <div>First</div>
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" placeholder="" aria-label="Last name">
+                    <div>Last</div>
+                </div>
+            </div><br>
+            <div class="row">
+                <label for="" class="form-label"><h5>Email<span class="main">*</span></h5></label>
+                <div class="col-md-12">
+                    <input type="email" class="form-control" id="inputEmail3">
+                </div>
+            </div><br>
+            <div class="row">
+                <label for="" class="form-label"><h5>Your experience<span class="main">*</span></h5></label>    
+                <div class="col-2">
+                    <input type="radio" id="star5" name="rate" value="5" />
+                    <label for="star5" title="text">5 stars</label>
+                    <input type="radio" id="star4" name="rate" value="4" />
+                    <label for="star4" title="text">4 stars</label>
+                    <input type="radio" id="star3" name="rate" value="3" />
+                    <label for="star3" title="text">3 stars</label>
+                    <input type="radio" id="star2" name="rate" value="2" />
+                    <label for="star2" title="text">2 stars</label>
+                    <input type="radio" id="star1" name="rate" value="1" />
+                    <label for="star1" title="text">1 star</label>
+                  </div>
+            </div><br>
+            <div class="row">
+                <label for="" class="form-label"><h5>How satisfied are you with<span class="main">*</span></h5></label>
+                <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col-2"></th>
+                        <th scope="col-2">Very Unsatisfied</th>
+                        <th scope="col-2">Unsatisfied</th>
+                        <th scope="col-2">Normal</th>
+                        <th scope="col-2">Satisfied</th>
+                        <th scope="col-2">Very satisfied</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <th>Purchase</th>
+                    <th><input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"></th>
+                    <th><input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option2"></th>
+                    <th><input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option3"></th>
+                    <th><input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option4"></th>
+                    <th><input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option5"></th>
+                </tr>
+                <tr>
+                    <th>Service</th>
+                    <th><input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option7"></th>
+                    <th><input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option8"></th>
+                    <th><input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option9"></th>
+                    <th><input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option4"></th>
+                    <th><input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option5"></th>
+                </tr>
+                <tr>
+                    <th>Company Overall</th>
+                    <th><input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"></th>
+                    <th><input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option2"></th>
+                    <th><input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option3"></th>
+                    <th><input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option4"></th>
+                    <th><input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option5"></th>
+                </tr>
+
+              </table>
+            </div><br>
+            <div class="row">
+                <label for="" class="form-label"><h5>How likely are you to<span class="main">*</span></h5></label>
+                <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col-2"></th>
+                        <th scope="col-2">Very Unlikely</th>
+                        <th scope="col-2">Unlikely</th>
+                        <th scope="col-2">Normal</th>
+                        <th scope="col-2">likely</th>
+                        <th scope="col-2">Very likely</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <th>Buy from us again</th>
+                    <th><input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"></th>
+                    <th><input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option2"></th>
+                    <th><input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option3"></th>
+                    <th><input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option4"></th>
+                    <th><input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option5"></th>
+                </tr>
+                <tr>
+                    <th>Recommend our product to others</th>
+                    <th><input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"></th>
+                    <th><input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option2"></th>
+                    <th><input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option3"></th>
+                    <th><input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option4"></th>
+                    <th><input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option5"></th>
+                </tr>
+                <tr>
+                    <th>Recommand our company to others</th>
+                    <th><input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"></th>
+                    <th><input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option2"></th>
+                    <th><input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option3"></th>
+                    <th><input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option4"></th>
+                    <th><input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option5"></th>
+                </tr>
+              </table>
+            </div>
+            <div class="row">
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label"><h5>Additional comments or suggestions</h5></label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                <button type="button" class="btn btn-secondary btn-lg">Submit</button>
+                </div>
+            </div>           
+        </form>
+    </div>   
+</body>
+</html>

@@ -1,0 +1,42 @@
+.main{
+    color: red;
+}
+.col-2 {
+    float: right;
+    height: 46px;
+    padding: 0 10px;
+
+}
+.col-2:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.col-2:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.col-2:not(:checked) > label:before {
+    content: '★ ';
+}
+.col-2 > input:checked ~ label {
+    color: #ffc700;    
+}
+.col-2:not(:checked) > label:hover,
+.col-2:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.col-2 > input:checked + label:hover,
+.col-2 > input:checked + label:hover ~ label,
+.col-2 > input:checked ~ label:hover,
+.col-2 > input:checked ~ label:hover ~ label,
+.col-2 > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+.container{
+    padding: 10px;
+}
